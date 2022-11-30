@@ -3,7 +3,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { publicRoutes } from "./router/publicRoutes";
 
 import { theme } from "./themes";
-import { lazyImport } from "./utils";
 
 import "@splidejs/react-splide/css";
 
@@ -14,12 +13,10 @@ import "@splidejs/react-splide/css/sea-green";
 // or only core styles
 import "@splidejs/react-splide/css/core";
 
-const { Home } = lazyImport(() => import("./pages"), "Home");
-
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    // element: <Home />,
     children: [publicRoutes()],
   },
 ]);

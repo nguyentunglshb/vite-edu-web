@@ -7,7 +7,7 @@ type CardProps = {
 
 export function PopularCard({ subject, bgImg }: CardProps) {
   return (
-    <Box w="270px" py="1rem">
+    <Box py="1rem">
       <HStack
         w="100%"
         h="100%"
